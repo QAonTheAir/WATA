@@ -34,7 +34,7 @@ public class SearchPageTest extends BaseTest {
     public Object[][] filterDataManufacturer() {
         return new Object[][] {
                 {"Computers > Notebooks", "Apple"},
-                {"Computers > Notebooks", "HP"},
+                {"Computers > Notebooks", "HP"}
         };
     }
     @DataProvider(name = "filterProductByPrice")

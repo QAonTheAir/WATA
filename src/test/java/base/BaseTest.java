@@ -3,6 +3,7 @@ package base;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import utils.ConfigReader;
 import utils.DriverFactory;
@@ -20,6 +21,9 @@ public class BaseTest {
             ReportPortalUtils.attachScreenshot(driver, "Screenshot on failure for test: " + result.getName());
 
         }
+    }
+    @AfterSuite
+    public void cleanUp() {
         DriverFactory.quitDriver();
     }
     @BeforeClass

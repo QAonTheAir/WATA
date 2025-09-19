@@ -38,7 +38,7 @@ src/
  │         └── tests/         # Test classes
  └── resources/
       ├── logback.xml         # ReportPortal logback appender
-      ├── allure.properties   # Allure configuration
+      ├── reportportal.properties   # ReportPortal configuration
       └── testng.xml          # TestNG suite
 ```
 
@@ -77,6 +77,10 @@ mvn clean test -Dheadless=true
 - Requires a running **ReportPortal server**  
 - Configured via `logback.xml`  
 - Screenshots & logs are automatically attached  
+
+---
+### 🔹 TestNG Emailable HTML Report
+- By default, TestNG generates an HTML report located at `target/surefire-reports/emailable-report.html`
 
 ---
 
