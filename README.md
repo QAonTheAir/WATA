@@ -79,6 +79,10 @@ mvn clean test -Dheadless=true
 - Screenshots & logs are automatically attached  
 
 ---
+### 🔹 TestNG Emailable HTML Report
+- By default, TestNG generates an HTML report located at `target/surefire-reports/emailable-report.html`
+
+---
 
 ## 🖼️ Screenshots  
 
